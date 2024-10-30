@@ -1,0 +1,59 @@
+#inputRecipeAndID {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #inputRecipeAndID input[type="text"],
+  #inputRecipeAndID input[type="submit"]
+  {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  #inputRecipeAndID input[type="button"]{
+    background-color: #2500fa;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  #inputRecipeAndID input[type="submit"]
+  {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #inputRecipeAndID input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  #inputRecipeAndID input[type="button"]:hover{
+    background-color: #140374
+  }
+  
+  #inputRecipeAndID input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  #ingredientAddRemove {
+    margin-bottom: 20px;
+  }
+  
+  #ingredientAddRemove input[type="text"] {
+    width: 48%;
+  }
+  
+  #instructionAddRemove input[type="text"] {
+    width: 100%;
+  }

@@ -1,0 +1,30 @@
+#actionButtons {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #actionButtons input[type="text"],
+  #actionButtons button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  #actionButtons button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #actionButtons button:hover {
+    background-color: #45a049;
+  }
+  
+  #actionButtons input[type="text"]::placeholder {
+    color: #999;
+  }
+  

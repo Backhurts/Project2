@@ -1,0 +1,116 @@
+-------------- BACKEND TESTING
+
+GET: GetAllCars http://localhost:3001/api/recipes ✓
+
+
+
+GET+ID: getRecipeByID http://localhost:3001/api/recipes/65e349a9156eded2960f2070 ✓
+
+
+
+POST: addNewRecipe http://localhost:3001/api/recipes/ ✓
+{
+  "title": "Test title",
+  "ingredients": [
+    {"name": "Ingredient 1", "quantity": "1 cup"},
+    {"name": "Ingredient 2", "quantity": "2 cups"}
+  ],
+  "instructions": ["Step 1: Do this", "Step 2: Do that"],
+  "cuisine": "Your Cuisine",
+  "preparationTime": 30,
+  "imageUrl": "https://example.com/recipe-image.jpg",
+  "createdBy": "Your Name"
+}
+
+PUT: updateRecipe |NEEDS ID|  http://localhost:3001/api/recipes/ ✓
+{
+  "title": "Changed Title",
+  "ingredients": [
+    {"name": "Ingredient 3", "quantity": "4 cup"},
+    {"name": "Ingredient 4", "quantity": "5 cups"}
+  ],
+  "instructions": ["Step 1: Dont do this", "Step 2: Do that"],
+  "cuisine": "second cuisine",
+  "preparationTime": 50,
+  "imageUrl": "https://example.com/recipe-image2.jpg",
+  "createdBy": "John doe"
+}
+
+
+
+
+
+✗
+
+---------------------- RECIPES -----------------------------
+1.
+{
+  "title": "Beef",
+  "ingredients": [
+    {"name": "Beef", "quantity": "500g"},
+    {"name": "Olive Oil", "quantity": "50ml"}
+  ],
+  "instructions": ["Step 1: heat up oil", "Step 2: put beef in pan", "Step 3:"cook until brown"],
+  "cuisine": "Meat",
+  "preparationTime": 15,
+  "imageUrl": "https://imgur.com/zhfNNFn",
+  "createdBy": "Micha"
+}
+2.
+{
+  "title": "Salad",
+  "ingredients": [
+    {"name": "Tomato", "quantity": "3"},
+    {"name": "Cucumber", "quantity": "4"},
+    {"name": "lettuce", "quantity": "2"}
+  ],
+  "instructions": ["Step 1: Chop everything up", "Step 2: put in a bowl"],
+  "cuisine": "Salad",
+  "preparationTime": 5,
+  "imageUrl": "https://imgur.com/I4N3Uwk",
+  "createdBy": "Micha"
+}
+3.
+{
+  "title": "Mash Potatoes",
+  "ingredients": [
+    {"name": "Peeled potatoes", "quantity": "8"},
+    {"name": "Milk", "quantity": "200ml"},
+    {"name": "Butter", "quantity": "50g"}
+  ],
+  "instructions": ["Step 1: Mash the potatoes", "Step 2: add milk and butter"],
+  "cuisine": "Potatoes",
+  "preparationTime": 10,
+  "imageUrl": "https://imgur.com/BXmxevh",
+  "createdBy": "Micha"
+}
+
+
+
+
+
+---------------------- Initial data to send through POST -----------------------
+
+{
+  "title": "Recipe Title",
+  ingredients_name: "Name", 
+  ingredients_quantity: "Quantity" ,
+  "instructions": ["Step 1: Do this", "Step 2: Do that"],
+  "cuisine": "Your Cuisine",
+  "preparationTime": 30,
+  "imageUrl": "https://example.com/recipe-image.jpg",
+  "createdBy": "Your Name"
+}
+
+{
+  "title": "Recipe Title2",
+  "ingredients": [
+    {"name": "Ingredient 3", "quantity": "5 cup"},
+    {"name": "Ingredient 24", "quantity": "6 cups"}
+  ],
+  "instructions": ["Step 1: Dont this", "Step 2: Dont that"],
+  "cuisine": "My Cuisine",
+  "preparationTime": 60,
+  "imageUrl": "https://example.com/recipe-image2.jpg",
+  "createdBy": "John Doe"
+}

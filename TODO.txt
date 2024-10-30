@@ -1,0 +1,6 @@
+TODO
+
+
+at the button that generates new data in the input fields randomly 
+
+design website so it doesnt look like shit

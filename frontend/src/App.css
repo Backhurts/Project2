@@ -1,0 +1,45 @@
+body {
+  margin: 100px;
+  padding: 0;
+  background-image: url('../public/BackgroundIMG.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+
+  min-width: 1000px;
+}
+
+.overlay{
+  min-width: 1000px;
+  width: 90%;
+  height: 80%;
+  background-color: rgba(58, 57, 57, 0.7);
+  justify-content: center;
+  display: flex;
+}
+
+#ingredientAddRemove{
+ width: 400px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+#instructionAddRemove{
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#inputRecipeAndID{
+  padding-left: 15px;
+}
+
+.leftSide,
+.rightSide {
+  /* V makes both divs take equal width */
+  flex: 1; 
+  padding: 10px;
+}
